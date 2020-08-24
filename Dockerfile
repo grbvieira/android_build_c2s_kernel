@@ -7,16 +7,20 @@ RUN apt update
 RUN apt -y dist-upgrade
 RUN apt -y install \
   bc \
+  bison \
   build-essential \
   curl \
+  flex \
   git \
   libssl-dev \
   python \
   python3 \
+  python3-pip \
   wget \
   zip
 
-RUN git clone \
-  --depth=1 \
-  https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 \
-  /opt/aarch64-linux-android-4.9
+RUN pip3 install gdown
+
+RUN gdown -O /var/tmp/toolchain.tar.gz --id 1ovL_wswZLajkZY_uyxCJXgziU_kOZiRS && \
+  tar -xvpf /var/tmp/toolchain.tar.gz -C /opt && \
+  rm -f /var/tmp/toolchain.tar.gz
