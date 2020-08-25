@@ -10,7 +10,7 @@ git clone \
 cd /usr/src/kernel
 
 # symlink toolchain (installed at /opt)
-ln -s /opt /usr/src/kernel/toolchain
+ln -s /opt/toolchain /usr/src/kernel/toolchain
 
 # execute actual build
 export ANDROID_MAJOR_VERSION=q

@@ -22,5 +22,6 @@ RUN apt -y install \
 RUN pip3 install gdown
 
 RUN gdown -O /var/tmp/toolchain.tar.gz --id 1ovL_wswZLajkZY_uyxCJXgziU_kOZiRS && \
-  tar -xvpf /var/tmp/toolchain.tar.gz -C /opt && \
+  mkdir -p /opt/toolchain && \
+  tar -xvpf /var/tmp/toolchain.tar.gz -C /opt/toolchain && \
   rm -f /var/tmp/toolchain.tar.gz
