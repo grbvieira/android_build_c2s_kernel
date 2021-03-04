@@ -15,7 +15,7 @@ ln -s /opt/toolchain /usr/src/kernel/toolchain
 # execute actual build
 ANDROID_MAJOR_VERSION=r
 PLATFORM_VERSION=11
-export ANDROID_MAJOR_VERSION ANDROID_VERSION
+export ANDROID_MAJOR_VERSION PLATFORM_VERSION
 make -j$(nproc --all) ARCH=arm64 exynos9830-c2sxxx_defconfig
 make -j$(nproc --all) ARCH=arm64
 
