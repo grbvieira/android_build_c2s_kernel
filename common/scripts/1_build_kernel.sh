@@ -13,8 +13,8 @@ cd /usr/src/kernel
 ln -s /opt/toolchain /usr/src/kernel/toolchain
 
 # execute actual build
-ANDROID_MAJOR_VERSION="q"
-ANDROID_VERSION="10.0.0"
+ANDROID_MAJOR_VERSION="r"
+ANDROID_VERSION="11.0.0"
 export ANDROID_MAJOR_VERSION ANDROID_VERSION
 make -j$(nproc --all) ARCH=arm64 exynos9830-c2sxxx_defconfig
 make -j$(nproc --all) ARCH=arm64
