@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker build -t buildkernel --no-cache .
+docker build -t buildkernel .
 docker run -it \
   -v $(pwd)/common:/common \
   -v $(pwd)/out:/out \
