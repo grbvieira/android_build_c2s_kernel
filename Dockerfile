@@ -12,6 +12,7 @@ RUN apt -y install \
   curl \
   flex \
   git \
+  libncurses-dev \
   libssl-dev \
   python \
   python3 \
