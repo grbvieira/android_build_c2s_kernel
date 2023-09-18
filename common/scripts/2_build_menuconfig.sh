@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # change working directory
-cd /usr/src/kernel
+cd /home/noosreg/kernel
 
 # symlink toolchain (installed at /opt)
-ln -s /opt/toolchain /usr/src/kernel/toolchain
+ln -s /opt/toolchain /home/noosreg/kernel/toolchain
 
 # execute actual build
 ANDROID_MAJOR_VERSION=r
@@ -15,5 +15,5 @@ make ARCH=arm64 menuconfig
 
 # copy kernel config out
 cp -fv \
-  /usr/src/kernel/.config \
+  /home/noosreg/kernel/.config \
   /out/defconfig
