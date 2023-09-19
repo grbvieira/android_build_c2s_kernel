@@ -13,7 +13,7 @@
 repo_url="https://github.com/grbvieira/kernel-N986B.git"
 
 # Defina o diretório de destino para o repositório
-dest_dir="/home/noosreg/kernel-N986B"
+dest_dir="/home/noosreg/kernel"
 
 # Verifique se o diretório já existe
 if [ -d "$dest_dir" ]; then
