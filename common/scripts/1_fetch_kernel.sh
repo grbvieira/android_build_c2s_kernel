@@ -15,6 +15,7 @@ repo_url="https://github.com/grbvieira/kernel-N986B.git"
 # Defina o diretório de destino para o repositório
 dest_dir="/home/noosreg/kernel"
 
+echo "O caminho e esse: $dest_dir"
 # Verifique se o diretório já existe
 if [ -d "$dest_dir" ]; then
     # O diretório existe, então fazemos um git pull

@@ -17,7 +17,8 @@ RUN apt -y install \
   python3 \
   python3-pip \
   wget \
-  zip
+  zip \
+  python-is-python3
 
 RUN pip3 install gdown
 
