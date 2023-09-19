@@ -14,7 +14,6 @@ RUN apt -y install \
   git \
   libncurses-dev \
   libssl-dev \
-  python \
   python3 \
   python3-pip \
   wget \
